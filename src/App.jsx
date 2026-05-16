@@ -16,9 +16,9 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started</h1>
+          <h1>Is this smoother? Yes it is!</h1>
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            Hello World! You need to run <code>npm run dev</code> instead of any of the other commands in order to have the dev server that you want!
           </p>
         </div>
         <button
