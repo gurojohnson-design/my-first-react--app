@@ -1,6 +1,6 @@
 export function Profile() {
     return (
-        <div>
+        <Card>
         <Avatar
             size={100}
             person={{
@@ -8,21 +8,7 @@ export function Profile() {
                 imageId: '1bX5QH6',
             }}
         />
-        <Avatar
-            size={100}
-            person={{
-                name: 'Katsuko Saruhashi',
-                imageId: 'YfeOqp2'
-            }}
-        />
-        <Avatar
-            size={80}
-            person={{
-                name: 'August Johnson',
-                imageId: 'OKS67lh'
-            }}
-        />
-        </div>
+        </Card>
     );
 }
 
@@ -40,5 +26,13 @@ function Avatar({person, size}) {
 
             height={size}
         />
+    );
+}
+
+function Card({ children }) {
+    return (
+        <div classname='card'>
+            {children}
+        </div>
     );
 }
